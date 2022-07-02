@@ -1,0 +1,324 @@
+.mainWindow {
+    position: relative;
+	width: 100vw;
+	height: 100vh;
+    background-color: rgba(00, 00, 00, 0.8);
+}
+
+.dice-text {
+    position: absolute;
+    right: 893px;
+    top: 80px;
+    margin-top: 0px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 32px;
+
+}
+
+.dice-img {
+    position: absolute;
+    width: 24px;
+    height: 23.17px;
+    right: 990px;
+    top: 94px;
+}
+
+.sum-dice {
+    position: absolute;
+    right: 915px;
+    bottom: 263px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+    ;
+}
+
+.esc-block {
+    position: absolute;
+    width: 70px;
+    height: 45px;
+    right: 200px;
+    top: 80px;
+}
+
+.esc-text {
+    position: absolute;
+    right: 80px;
+    top: 90px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.mainWindow::after {
+    position: absolute;
+    content: "Esc";
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    right: 224px;
+    top: 90px;
+}
+
+.btn-cregame {
+    position: absolute;
+    right: 830px;
+    bottom: 60px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #FF3737;
+    color: #fff;
+    border: 0px;
+}
+
+.btn-ingame {
+    position: absolute;
+    right: 830px;
+    bottom: 60px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #FF3737;
+    color: #fff;
+    border: 0px;
+}
+
+.btn-ingame:hover {
+    background-color: #000;
+}
+
+.btn-cregame:hover {
+    background-color: #000;
+}
+
+.change-count__buttons {
+    position: absolute;
+    right: 730px;
+    bottom: 145px;
+}
+
+.btn-money {
+    width: 65px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-sum__active {
+    border: 1px solid rgba(255, 55, 55, 1)
+}
+
+.btn-money:nth-child(n+2) {
+    margin-left: 5px;
+}
+
+.money-switch {
+    position: absolute;
+    left: 910px;
+    bottom: 225px;
+    width: 128px;
+    height: 38px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.change-mode {
+    position: absolute;
+    top: 190px;
+    right: 890px;
+    text-align: center;
+}
+
+.change-mode__text {
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-mode1p {
+    position: absolute;
+    left: -39px;
+    width: 95px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px 0px 0px 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.btn-mode5p {
+    position: absolute;
+    left: 56px;
+    width: 95px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.btn-mode__active {
+    width: 95px;
+    height: 35px;
+    background: #FF3737;
+    border: 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.players-near {
+    position: absolute;
+    right: 130px;
+    top: 285px;
+}
+
+.player-name {
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 16px;
+}
+
+.player-name:nth-child(3) {
+    margin-top: 0px;
+}
+
+.player-name--active {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.player-name__near {
+    width: 178px;
+    height: 23px;
+    font-size: 24px;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.player-active {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.player-active__btn {
+    width: 12px;
+    height: 12px;
+    border: 10px solid rgba(255, 55, 55, 1);
+    border-radius: 40%;
+    background-color: rgba(255, 55, 55, 1);
+}
+
+.player-active__btn:hover {
+    border: 10px solid #000;
+    background-color: #000;
+}
+
+
+.your-dice {
+    position: absolute;
+    top: 317px;
+    left: 799px;
+    width: 100px;
+    text-align: center;
+}
+
+.vs-name {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.your-number {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(51, 145, 255, 1);
+}
+
+.your-number::after {
+    position: absolute;
+    content: "";
+    box-shadow: -15px 30px 40px 35px rgba(51, 145, 255, 0.2);
+}
+
+.him-dice {
+    position: absolute;
+    top: 317px;
+    right: 750px;
+    width: 100px;
+    text-align: center;
+}
+
+.him-number {
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgba(255, 55, 55, 1);
+}
+
+.him-number::after {
+    position: absolute;
+    content: "";
+    box-shadow: -15px 30px 40px 35px rgba(255, 55, 55, 0.2);
+}
+
+.chat-window {
+    width: 363px;
+    height: 480px;
+    margin: 24px 0px 24px 0px;
+    overflow-y: auto;
+}
+
+.chat-text {
+    width: 44px;
+    height: 23px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.chat {
+    position: absolute;
+    top: 210px;
+    left: 60px;
+}
+
+.chat-input {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding-left: 20px;  
+    font-size: 12px;
+    color: #fff;
+}
+
+.chat-input:focus {
+    outline: 0;
+    border: 1px solid #000;
+}
+
+.chat-window::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-sender {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.chat-message {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    line-height: 24px;
+}
+
